@@ -627,7 +627,7 @@ ol {
 }
 
 .input-container {
-  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .form-label {
@@ -647,6 +647,10 @@ ol {
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+}
+
+.text-area {
+  margin-bottom: 16px;
 }
 
 .text-area-field {
@@ -690,10 +694,6 @@ ol {
 
 .form-input:focus {
   border-color: #4d5ae5;
-}
-
-.text-area {
-  margin-top: 8px;
 }
 
 .text-area-field:focus {
@@ -752,7 +752,6 @@ span {
 }
 
 .policy-container {
-  margin-top: 16px;
   margin-bottom: 24px;
 }
 
