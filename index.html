@@ -91,6 +91,7 @@
         <div class="container">
           <h1 class="page-header">Effective Solutions for Your Business</h1>
           <button
+            data-modal-open
             class="button"
             type="button"
           >
@@ -669,9 +670,13 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div
+      class="backdrop"
+      data-modal
+    >
       <div class="modal">
         <button
+          data-modal-close
           class="modal-btn-close"
           type="button"
         >
@@ -796,5 +801,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
