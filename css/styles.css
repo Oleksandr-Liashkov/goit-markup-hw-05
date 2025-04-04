@@ -643,8 +643,21 @@ ol {
   color: rgba(46, 47, 66, 0.4);
 }
 
+.text-area-field {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .icon-input-container {
   position: relative;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-icon {
@@ -652,6 +665,9 @@ ol {
   left: 16px;
   top: 8px;
   fill: #2e2f42;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-area-field {
@@ -666,6 +682,10 @@ ol {
 .form-input:focus + .input-icon {
   fill: #4d5ae5;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-area {
+  margin-bottom: 16px;
 }
 
 .form-input:focus {
@@ -703,6 +723,7 @@ ol {
   min-width: 169px;
   height: 56px;
   border: none;
+  cursor: pointer;
   margin: 0 auto;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
@@ -717,13 +738,20 @@ ol {
   cursor: pointer;
 }
 
+span {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+}
+
 .policy-label {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: flex;
+  line-height: 1.17;
   a {
     line-height: 1.33333;
     text-decoration: underline;
@@ -740,6 +768,10 @@ ol {
 
 .footer-form-sub-container {
   display: flex;
+}
+
+.policy-link {
+  color: #4d5ae5;
 }
 
 .footer-subscribe-btn {
@@ -803,4 +835,5 @@ ol {
   background-color: #404bbf;
   border: 1px solid #404bbf;
   fill: #f4f4fd;
+  border: none;
 }
