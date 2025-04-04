@@ -464,6 +464,11 @@ ol {
   width: 264px;
   height: 40px;
   background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  color: #ffffff;
 }
 
 .footer-input::placeholder {
@@ -471,7 +476,7 @@ ol {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: #ffffff;
 }
 
 .image-container {
@@ -661,7 +666,6 @@ ol {
   position: relative;
   background-color: transparent;
   outline: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-icon {
@@ -786,7 +790,7 @@ span {
   gap: 16px;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background-color: #4d5ae5;
   font-weight: 500;
@@ -796,6 +800,7 @@ span {
   text-align: center;
   color: #fff;
   border: none;
+  cursor: pointer;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -808,6 +813,7 @@ span {
 
 .subscribe-btn-icon {
   fill: #fff;
+  margin-left: 16px;
 }
 
 .footer-form-text {
