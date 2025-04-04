@@ -753,7 +753,6 @@ span {
   font-size: 12px;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  display: flex;
   line-height: 1.17;
   align-items: center;
   margin-bottom: 4px;
@@ -816,6 +815,7 @@ span {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
 }
 
 .footer-form-container {
