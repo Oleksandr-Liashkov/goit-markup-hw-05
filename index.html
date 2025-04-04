@@ -645,15 +645,33 @@
         <div class="footer-form-container">
           <p class="footer-form-text">Subscribe</p>
           <div class="footer-form-sub-container">
-            <form class="footer-form"><input class="footer-input" type="email" id="footer-email" name="footer-email" placeholder="E-mail" />
-            <button class="footer-subscribe-btn" type="button"><span class="button-text">Subscribe</span><svg class="subscribe-btn-icon" width="24" height="20">
-              <use href="./images/icons.svg#icon-btn-icon"></use>
-            </svg></button></form>
+            <form class="footer-form">
+              <input
+                class="footer-input"
+                type="email"
+                id="footer-email"
+                name="footer-email"
+                placeholder="E-mail"
+              />
+              <button
+                class="footer-subscribe-btn"
+                type="button"
+              >
+                <span class="button-text">Subscribe</span
+                ><svg
+                  class="subscribe-btn-icon"
+                  width="24"
+                  height="20"
+                >
+                  <use href="./images/icons.svg#icon-btn-icon"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button
           class="modal-btn-close"
@@ -672,16 +690,15 @@
           <div class="input-container">
             <label
               class="form-label"
-              for="name"
+              for="user-name"
               >Name</label
             >
             <div class="icon-input-container">
-              
               <input
                 class="form-input"
-                type="name"
-                name="name"
-                id="name"
+                type="text"
+                name="user-name"
+                id="user-name"
               /><svg
                 class="input-icon"
                 width="18"
@@ -698,7 +715,6 @@
               >Phone</label
             >
             <div class="icon-input-container">
-              
               <input
                 class="form-input"
                 type="tel"
@@ -720,7 +736,6 @@
               >Email</label
             >
             <div class="icon-input-container">
-              
               <input
                 class="form-input"
                 type="email"
@@ -736,22 +751,51 @@
             </div>
           </div>
           <div class="text-area">
-            <label class="text-area-label" for="text-area">Comment</label>
-          <textarea class="text-area-field" name="text-area" id="text-area" placeholder="Text input"></textarea>
-        </div>
-        <div class="policy-container">
-        <input class="policy-checkbox visually-hidden" type="checkbox" name="policy" id="policy" value="true" />
-        <label class="policy-label" for="policy"><span class="fake-checkbox"><svg class="checkbox-icon" width="10" heigth="8">
-          <use href="./images/icons.svg#icon-check"></use>
-        </svg></span>I accept the terms and conditions of the&nbsp;
-        <a class="policy-link" href="">Privacy Policy</a></label></div>
-        <button class="submit-btn" type="submit">Send</button>
-
-        </div>
-        
+            <label
+              class="text-area-label"
+              for="text-area"
+              >Comment</label
+            >
+            <textarea
+              class="text-area-field"
+              name="text-area"
+              id="text-area"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="policy-container">
+            <input
+              class="policy-checkbox visually-hidden"
+              type="checkbox"
+              name="policy"
+              id="policy"
+              value="true"
+            />
+            <label
+              class="policy-label"
+              for="policy"
+              ><span class="fake-checkbox"
+                ><svg
+                  class="checkbox-icon"
+                  width="10"
+                  height="8"
+                >
+                  <use href="./images/icons.svg#icon-check"></use></svg></span
+              >I accept the terms and conditions of the&nbsp;
+              <a
+                class="policy-link"
+                href=""
+                >Privacy Policy</a
+              ></label
+            >
+          </div>
+          <button
+            class="submit-btn"
+            type="submit"
+          >
+            Send
+          </button>
         </form>
-        
-
       </div>
     </div>
   </body>
